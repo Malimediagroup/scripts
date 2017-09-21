@@ -378,7 +378,7 @@ def main(old_email, new_email):
         if r.status_code == 200 and r.json():
             pprint(r.json())
             log.warn('Provided NEW emailaddres "%s" already exists in BIEDMEE! Continue with care!', new_email)
-            # We can't delete a user, so we can change the emailaddres into
+            # We can't delete a user, but we can change the emailaddres into
             # a hex-encoded version to "disable" the account
             # (hexadecimal is case-insensitive).
             hex_str = base64.b16encode(new_email).lower()
