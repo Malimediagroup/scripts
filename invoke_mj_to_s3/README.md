@@ -18,7 +18,7 @@ This script can randomize the time between in invocations.
 Start the script with:
 
 ```shell
-$ ./invoke_mj_to_s3.py -r contact -m 8 --auto --uniform-random > contact.log
+$ ./invoke_mj_to_s3.py -r contact -m 8 --auto --uniform-random > contact.log &
 ```
 Ask for help with:
 
